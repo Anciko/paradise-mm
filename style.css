@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+.custom-container {
+    width: 95%;
+    margin: 20px auto;
+    columns: 5;
+    column-gap: 15px;
+}
+
+.custom-container .custom-box {
+    width: 100%;
+    margin-bottom: 10px;
+    break-inside: avoid;
+}
+
+.custom-container .custom-box img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+@media (max-width: 1200px) {
+    .custom-container {
+        width: calc(100% - 40px);
+        columns: 5;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .custom-container {
+        columns: 4;
+    }
+}
+
+@media (max-width: 480px) {
+    .custom-container {
+        columns: 2;
+    }
+}
